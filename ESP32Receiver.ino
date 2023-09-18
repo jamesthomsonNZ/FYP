@@ -68,7 +68,7 @@ double calculateACHFromTemperature(double insideTemp, double outsideTemp) {
 
 // Calculate Duty Cycle 
 double calculateDutyCycle(double ach) {
-  return ((ach * (1.0 / 3600.0) * 7.2 * (1000.0 / 1.0)) / maxFlowRate) * maxDutyCycle;
+  return ((ach * (1.0 / 3600.0) * 7.3 * (1000.0 / 1.0)) / maxFlowRate) * maxDutyCycle;
 }
 
 // Calculate ACH based on HM3001 data sensor
@@ -238,7 +238,7 @@ void loop() {
   }
 
   // Dummy parameters
-  // sensorInsideData["in_temperature"] = 19.6;
+  //sensorInsideData["in_temperature"] = 19.6;
   // sensorOutsideData["out_temperature"] = 16.0;
   // Serial.print("in_temperature: ");
   // Serial.println(sensorInsideData["in_temperature"]);
